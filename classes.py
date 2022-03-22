@@ -13,27 +13,42 @@ class Person:
     def same_name(self, other):
         return self.name == other.name
 
-    # there are several other special method names like __init__, that we will talk about later
+class SomethingElse:
+    pass
+
+# there are several other special method names like __init__, that we will talk about later
 
 # in python, if i say x.y, y is an "attribute" of x (incl "fields", and methods, anything)
 # in python, by default for custom classes, you can add new attributes to any object
 #   you want
 
-# if you don't define an __init__ method (constructor), a default empty constructor will be called.
-# nick = Person()
-nick = Person('Nick')
-nick2 = Person('Nick')
+# this condition is true if this module is being directly executed
+# this condition is false if this module is being imported by another
+if __name__ == '__main__':
+    # if you don't define an __init__ method (constructor), a default empty constructor will be called.
+    # nick = Person()
+    nick = Person('Nick')
+    nick2 = Person('Nick')
 
-nick.same_name(nick2)
+    nick.same_name(nick2)
 
-# classes do not need to specify what attributes are allowed on the object
-# we can just add them (every object has a special dict inside it that holds those attributes)
-# nick.name = 'Nick'
-nick.job = 'Trainer'
+    # classes do not need to specify what attributes are allowed on the object
+    # we can just add them (every object has a special dict inside it that holds those attributes)
+    # nick.name = 'Nick'
+    nick.job = 'Trainer'
 
-print(nick)
-print(nick.name)
-print(nick.job)
+    print(nick)
+    print(nick.name)
+    print(nick.job)
 
-print(nick.display())
-print(Person.display(nick)) # equiv to above, but we wouldn't normally write it like that
+    print(nick.display())
+    print(Person.display(nick)) # equiv to above, but we wouldn't normally write it like that
+
+
+#example
+
+# module1 is its own application
+# module2 is a different application that wants to use some function that module1 already made
+
+# "library" module meant to be imported, "application" module meant to be executed
+# IF you want one module to be able to do BOTH - you then need "if __name__ == '__main__':"
