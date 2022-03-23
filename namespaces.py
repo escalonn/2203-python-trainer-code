@@ -1,4 +1,5 @@
 # how do scopes / namespaces work in python
+# import spark
 
 # a namespace is a context where variables live
 # the way that python interprets any name of a variable/etc
