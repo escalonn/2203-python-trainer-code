@@ -3,6 +3,7 @@ from file_database import FileDatabase
 
 
 def first_selection(selection: int) -> None:
+    '''the function'''
     if selection == 1:
         set_up_new_char()
     else:
