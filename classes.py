@@ -16,6 +16,8 @@ class Person:
 class SomethingElse:
     pass
 
+x = SomethingElse()
+
 # there are several other special method names like __init__, that we will talk about later
 
 # in python, if i say x.y, y is an "attribute" of x (incl "fields", and methods, anything)

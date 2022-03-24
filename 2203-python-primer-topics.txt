@@ -1,0 +1,31 @@
+monday
+    interpreter vs compiler
+    types & values
+    string literals
+    operators
+    lists
+    tuples
+tuesday
+    collections, sets, dicts
+    comprehensions, generators
+    classes (basic)
+    modules (basic)
+    exceptions
+    builtin functions
+wednesday
+    pypi & pip
+    file handling: open()/close()
+    modules
+    namespaces
+    variable scopes/lifetime
+thursday
+    simple/compound statements
+    repl
+    unit testing
+    pylint
+    classes & objects, dunder methods
+    lambda expression
+    logging
+    datetime
+    regex
+    identifiers & keywords (review)
