@@ -6,7 +6,7 @@
 - Dynamically Typed Language
     - You do not need to declare types
     - There are optional type annotations
-        - are only for hinting and have 0 affect on actual code execution
+        - are only for hinting and have 0 effect on actual code execution
 - Strongly Typed Language
     - Variables cannot be implicitly coerced into other types
         - "Hello" + 100
@@ -176,7 +176,7 @@ d = {"a":1, "b":2, "c":3} # Dictionary
 ### Exceptions
 - Occur when code does NOT execute "according to plan"
     - raising an exception
-- excpetions are just objects that contain information about what went wrong
+- exceptions are just objects that contain information about what went wrong
 - In built exceptions you should be aware of
     - Exception
         - The parent class of all Errors in Python
